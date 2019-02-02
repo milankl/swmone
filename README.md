@@ -14,7 +14,11 @@ with a Runge-Kutta 4th order time integration and 2nd order centred gradients an
 
 # Domain decomposition
 
-The domain of `N` grid points is split into chunks of equal size, which will be computed by individual processes separately. Each sub-domain is extend to the left and to the right with ghost points. Before every evaluation of the right-hand side the ghost points are updated via MPI.send/MPI.receive calls from adjacent processes. Only in the end a MPI.gather is executed to retrieve data from all sub-domains. Optional plotting with PyPlot (animation via updated figure). 
+The domain of `N` grid points is split into chunks of equal size, which will be computed by individual processes separately. Each sub-domain is extend to the left and to the right with ghost points. Before every evaluation of the right-hand side the ghost points are updated via MPI.send/MPI.receive calls from adjacent processes. Only in the end a MPI.gather is executed to retrieve data from all sub-domains. Optional plotting with PyPlot (animation via updated figure).
+
+# Documentation
+
+There's a [blog article](https://www.milank.de/mpi-julia#main), describing the model, the domain decomposition and the parallelization.
 
 # Requirements
 
