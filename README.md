@@ -18,7 +18,7 @@ The domain of `N` grid points is split into chunks of equal size, which will be 
 
 # Documentation
 
-There's a [blog article](https://www.milank.de/mpi-julia#main), describing the model, the domain decomposition and the parallelization.
+There's a [blog article](http://www.milank.de/mpi-julia#main), describing the model, the domain decomposition and the parallelization.
 
 # Requirements
 
